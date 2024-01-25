@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB APPLICATION</title>
+</head>
+<body>
+    <style>
+    *{
+        border:"0";
+        margin:"0";
+        box-sizing: border-box;
+
+    }
+    .container{
+        max-width: 900px;
+        margin:0 auto;
+    }
+    .apply_box{
+        max-width: 600px;
+        padding: 40px;
+        background-color: aqua;
+        margin: 0 auto;
+        margin-top:20px;
+        box-shadow: 5px rgba(1, 1, 1, 0.1);
+        border-radius: 20px;
+    }
+    .form_container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+        gap: 20px;
+        
+    }
+     .form{ 
+        display: flex;
+        flex-direction: column;
+     } 
+     label{
+        font-size: 15px;
+        margin-bottom: 5px;
+     }
+     input,select,textarea{
+        padding: 6px 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        font-size: 15px;
+     }
+     .button_container{
+        display: flex ;
+        justify-content: end;
+
+     }
+     button{
+        background-color: red;
+border: transparent solid 2px;
+padding: 5px 10px;        
+color: white;
+border-radius: 4px;
+transition: 0.3 ease-in;
+     }
+     button:hover{
+        background-color: grey;
+        border: 2px solid red;
+        color: black;
+        transition:0.3s ease-out ;
+        cursor: pointer;
+     }
+     .form_biki{
+        flex-direction:column ;
+     }
+
+    </style>
+    <div class="container">
+    <div class="apply_box" style="font-size: 15px;"><h1>JOB APPLICATION
+    <spam style="font-size: 20px;">(web)</spam></h1>
+    <hr>
+<form action="">
+    <div class="form_container">
+    <div class="form">
+<label for="first_name">First name</label>
+<input id="first_name" placeholder="Enter First name.." type="text">
+</div>
+<div class="form_biki>
+<label for="last_name">Last name</label>
+<input id="last_name" placeholder="Enter Last name.." type="text">
+</div>
+<div class="form">
+<label for="email">Email</label>
+<input id="email" placeholder="Enter Email" type="email">
+</div>
+<div class="form">
+<label for="job_role">Job Role</label>
+<select  id="job_role" name="job_role">
+    <option value="">select job role</option>
+    <option value="Frontend">Frontend Developer</option>
+    <option value="Backend">Backend Developer</option>
+    <option value="Full_stack">Full stack developer</option>
+    <option value="UI_UX">UI UX Deginer</option>
+</select>
+</div>
+<div class="form">
+    <label for="address">Address</label>
+    <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter Address"></textarea>
+</div>
+<div class="form">
+    <label for="city">City</label>
+    <input id="city" placeholder="Enter your city" type="text">
+</div>
+<div class="form">
+    <label for="pincode">Pincode</label>
+    <input id="pincode" type="number" placeholder="Enter your pincode">
+    </div>
+    <div class="form">
+        <label for="date">Start Date</label>
+        <input id="date" type="date" name="date">
+    </div>
+    <div  class="form">
+        <label for="upload">Upload Document</label>
+        <input style="background-color: white;" type="file" id="upload" name="upload"/>
+    </div>
+    <div class="button_container">
+        <button type="submit " >Apply Now</button>
+    </div>
+    </div>
+    </form>
+</div>
+</div>
+    
+</body>
+</html>
